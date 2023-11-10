@@ -2,5 +2,34 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
    
+}
+/* container */
+
+main{
+    height: calc(100vh - 50px);
+    background-color: blue;
+}
+#sidebar{
+    width: 150px;
+    max-height: 100%;
+    background-color: rgba(5,30,52,255)
+}
+
+
+#main-container{
+    width: calc(100vh - 150px);
+    max-height: 100%;
+}
+
+
+
+/* sidebar style */
+#admin{
+    margin-top: 180px;
+}
+#sidebar a{
+    color: white;
+    text-decoration: none;
 }
