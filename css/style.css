@@ -5,31 +5,111 @@
     font-family: 'Roboto', sans-serif;
    
 }
+
+/* style */
+p{
+    color: white;
+}
+.corsoid{
+    color: white;
+    font-size: 30px;
+    
+}
+.fa-square-plus{
+    color: white;
+    font-size: 30px;
+}
+th{
+    color: rgb(155,163,171);
+    
+}
+.scopetabel{
+    max-width: 12%;
+}
+.bottonlist{
+    display: flex;
+
+}
+.bottonlist button{
+    margin-right: 3px;
+}
+td{
+    font-size: 12px;
+}
+#listtitle{
+    background-color: rgb(207,209,211);
+    font-size: 30px;
+}
+.card-text{
+    color: black;
+}
+.fa-bell{
+    color: rgba(255,143,0,255);
+}
+
 /* container */
 
 main{
-    height: calc(100vh - 50px);
-    background-color: blue;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    margin-top: 40px;
+}
+#main-container{
+    width: calc(100% - 150px);
+    min-height: 100%;
 }
 #sidebar{
     width: 150px;
-    max-height: 100%;
-    background-color: rgba(5,30,52,255)
+    min-height: 100%;
+    background-color: rgba(5,30,52,255);
+    display: flex;
+    background-image: url("../img/sidebar-bg.png");
+
 }
 
-
-#main-container{
-    width: calc(100vh - 150px);
-    max-height: 100%;
+header{
+    position: fixed;
+    top:0;
+    right: 0;
+    min-width: 100%;
+    z-index: 1;
 }
 
 
 
 /* sidebar style */
-#admin{
-    margin-top: 180px;
-}
+
 #sidebar a{
     color: white;
     text-decoration: none;
+}
+
+/* banner */
+#banner{
+    background-color: rgba(27,114,232,255);
+}
+
+#badgeblu{
+    background-color: rgba(22,91,186,255);
+}
+
+
+
+/* mediaquery */
+/* mobile */
+@media all and (max-width:580px){
+
+    #sidebar{
+        width: 70px;
+    }
+    #main-container{
+        width: calc(100% - 70px);
+    }
+    .sidebartext{
+        display: none;
+    }
+    #banner{
+        width: 100%;
+    }
+
 }
